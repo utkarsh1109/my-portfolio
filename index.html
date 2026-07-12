@@ -194,7 +194,7 @@ My work has handled 8M+ packets/day, supported 1,400+ vehicles, powered EV charg
                             <p class="text-lg text-gray-500 font-medium mt-2 md:mt-0">February 2026 – Present</p>
                         </div>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                          <h6>Marketplace Application</h6>
+                          <h5>Marketplace Application</h5>
                             <li> Architected and built core FastAPI/Supabase backend workflows for Taskr’s two-sided marketplace, supporting task creation, user
 onboarding, helper matching, notifications, and request lifecycle management.</li>
                            <li> Designed marketplace data models and API workflows for user profiles, task state transitions, matching logic, and cross-platform
@@ -209,30 +209,7 @@ supporting production rollout across core marketplace workflows.</li>
                 </div>
               <!-- Experience Item 1 -->
                
-              <!-- Experience Item 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 section-card">
-                    <!-- Company Logo -->
-                    <img src="assets/taskr.jpg" alt="Company Logo" class="w-16 h-16 md:w-20 md:h-20 object-contain flex-shrink-0">
-                    <!-- Text Content -->
-                    <div class="flex-grow text-left">
-                        <div class="md:flex justify-between items-center mb-4">
-                            <div>
-                                <h3 class="text-2xl font-semibold">Founding Engineer</h3>
-                                <p class="text-lg text-gray-600">Taskr, LLC | State College, PA, USA</p>
-                            </div>
-                            <p class="text-lg text-gray-500 font-medium mt-2 md:mt-0">Feb 2026 – Apr 2026</p>
-                        </div>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>  Marketplace Application: Architected and owned end-to-end backend and API workflows for a cross-platform two-sided market
-place using FastAPI and Supabase; delivering task posting, user onboarding, helper matching, and notifications across iOS, Android,
-and web (React Native/Expo), from design through production deployment.</li>
-                            <li> Recommendation Ranking Engine: Engineered an AI-driven recommendation engine that scored and surfaced top helper
-matches using 10+ weighted signals; spanning behavioral patterns (response time, task history, ratings), geospatial proximity, and
-skill compatibility; reducing time-to-hire by 50% and improving match relevance.</li>
-                           
-                        </ul>
-                    </div>
-                </div>
+             
                 <!-- Experience Item 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 section-card">
                     <!-- Company Logo -->
@@ -247,27 +224,42 @@ skill compatibility; reducing time-to-hire by 50% and improving match relevance.
                             <p class="text-lg text-gray-500 font-medium mt-2 md:mt-0">Jul 2021 – Dec 2023</p>
                         </div>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Vehicle Tracking System: Built a Spring Boot fleet visibility platform with a dashboard, 10+ reports, and admin center; engineered
-a C++ TCP/IP engine to process data from 1,400+ municipal vehicles at 8M+ packets/day with 99.99% data integrity; architected
-Kafka-based streaming for real-time ingestion and a Redis-backed cache cutting retrieval latency and eliminating scaling bottlenecks
-to drive B2B/B2G contract acquisitions.</li>
-                            <li>Water Tank Management System: Engineered a Node.js/Perl platform for 6 industrial water tanks, ingesting real-time sensor
-data via a Perl HTTP server and Node.js automation to control pumps and valves; eliminating error-prone manual interventions,
-reducing water wastage, and delivering 30% utility cost reduction within 3 months of deployment.</li>
-                            <li>WebSocket Communication Channel: Architected a full-duplex Node.js WebSocket server implementing OCPP 2.0 to manage
-real-time bidirectional communication with EV charging hardware; handling 20+ async message types (heartbeat, status updates,
-OTA firmware, remote diagnostics) for charger health monitoring and command dispatch across an elastically scaling fleet.</li>
-                          <li>Payment Gateway: Built a Razorpay-integrated multi-sided payment system for Wurth India’s EV charging platform serving 300+
-users across 20+ stations, implementing wallet top-ups, session debits, refunds, and station-owner withdrawal workflows; resolving
-production-critical failures including transaction ID mismatches, Razorpay response delays, network billing anomalies, and nodal
-account reconciliation issues.</li>
-                            <li>Golf Course Management Portal: Built a Mojolicious/PostgreSQL web portal for an 18-hole golf course, digitizing tee-time
-scheduling, equipment tracking for 200+ items, staff management, and member records on a centralized platform.</li>
-                            <li>Inventory Management System: Built an asset accountability module within a Django-based inventory system for a govern
-ment defense organization; enabling scan-based tracking of 100+ military assets (firearms, ammunition, magazines, ordnance) with
-personnel-level traceability, replacing manual records and achieving 100% asset accountability.</li>
-                          <li>Parish Management System: Built a Java Swing desktop application for a local parish, managing congregation registration,
-church calendar scheduling, and event coordination; replacing paper-based records and centralizing operations into one system.</li>
+                                  <h5>Vehicle Tracking System</h5>/h5>
+
+                            <li>Built a real-time fleet visibility platform for 1,400+ municipal vehicles, including Spring Boot dashboards, 10+ operational reports,
+and a C++ TCP/IP ingestion engine processing 8M+ packets/day with 99.99% data integrity.</li>
+                            <li>Architected Kafka-based telemetry streaming and Redis-backed caching for high-volume vehicle data ingestion and retrieval, reducing
+latency, removing scaling bottlenecks, and improving reliability for B2B/B2G deployments.</li>
+
+                                                    <h5>Water Tank Management System</h5>
+
+                          
+                            <li>Built an industrial automation and monitoring system for 6 water tanks using Node.js, Perl, Angular, TypeScript, and Oracle SQL,
+ingesting near real-time sensor data to monitor tank levels, pump status, valve activity, and historical operating trends.</li>
+                          <li>Implemented automated pump and valve control workflows for local water-tank operations and deployed Azure-based monitoring
+infrastructure using Terraform-managed resources, reducing manual intervention, water wastage, and utility costs by 30% within 3
+months.</li>
+                           
+
+                                                    <h5>EV Charging Platform</h5>
+
+                            <li>Built a Golang WebSocket server implementing OCPP 2.0 for EV charger communication, using goroutines and connection/session
+management to support 20+ asynchronous message types including heartbeats, status updates, firmware updates, diagnostics, and
+remote command dispatch.</li>
+                          <li>Developed C#/.NET Framework and ASP.NET Web API-based payment workflows for Wurth India’s EV charging platform, &
+integrated Razorpay with Oracle SQL-backed wallet, charging-session, refund, withdrawal, and reconciliation modules across 300+
+users and 20+ stations.</li>
+                           <li>Resolved production payment failures involving transaction mismatches, delayed Razorpay responses, billing anomalies, and nodal
+account reconciliation issues, improving reliability of charging-session payments.</li>
+
+                                             <h5>Defense Asset Accountability System</h5>
+
+                          
+                            <li>Built and deployed a custom Django-based asset accountability application for a government defense organization, replacing manual
+inventory records with a centralized system for tracking 100+ regulated assets.</li>
+                          <li>Implemented scan-based asset tracking, personnel-level ownership mapping, and assignment history workflows to improve audit-ready
+traceability and reduce errors from manual record-keeping.</li>
+                           
                         
                         </ul>
                     </div>
@@ -287,8 +279,13 @@ church calendar scheduling, and event coordination; replacing paper-based record
                             <p class="text-lg text-gray-500 font-medium mt-2 md:mt-0">Feb 2020 – Nov 2020</p>
                         </div>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Lab Asset Tracking System: Built and deployed a PHP/JavaScript web application on AWS EC2 to track 300+ lab equipment
-items; replacing manual record-keeping with a centralized system and maintaining zero loss through complete asset visibility.</li>
+                                                                       <h5>Defense Asset Accountability System</h5>
+
+                            <li>Built and deployed a PHP/JavaScript lab asset tracking application on AWS EC2 for 300+ equipment items, with Amazon S3-backed
+storage for asset documents, images, and exported inventory records.</li>
+                          <li>Implemented AWS Lambda-based automation for scheduled backups and inventory report generation, replacing manual record-keeping
+with a centralized digital system.</li>
+                          <li>Maintained zero asset loss by enabling complete equipment traceability across asset status, location, and ownership records.</li>
                         </ul>
                     </div>
                 </div>
