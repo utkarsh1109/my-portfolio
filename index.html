@@ -919,7 +919,7 @@
 
           <div class="actions">
             <a class="btn primary" href="mailto:utkarshlikhar.ms@gmail.com">Start a conversation →</a>
-            <a class="btn" href="https://drive.google.com/file/d/1lKWfvCiRpE7ikAgHdyw5MV_iyEQqpbaM/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
+            <a class="btn" href="https://drive.google.com/file/d/1Rgycf5PBBRo5WD_PnSlzkpRvnAFY10QP/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
             <a class="btn" href="https://github.com/utkarsh1109" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn" href="https://www.linkedin.com/in/utkarsh-likhar" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
@@ -1016,19 +1016,93 @@
             <div>
               <div class="experience-top">
                 <div>
-                  <div class="role">Founding Engineer</div>
+                  <div class="role">Software Engineer</div>
                   <div class="company">Taskr, LLC · Blacksburg, VA · Remote</div>
                 </div>
-                <div class="time">Feb 2026 — Present</div>
+                <div class="time">May 2026 — Present</div>
               </div>
               <ul class="impact-list">
-                <li>Architected FastAPI/Supabase workflows for task creation, onboarding, helper matching, notifications, and request lifecycle management.</li>
-                <li>Designed marketplace data models and state transitions across iOS, Android, and web application behavior.</li>
-                <li>Built an AI-assisted helper ranking system using 10+ weighted signals to improve match relevance and reduce selection time.</li>
-                <li>Stabilized launch-critical workflows by resolving backend issues, deployment failures, and rollout blockers.</li>
+                <li>Stabilized Taskr’s FastAPI and Supabase backend through validation, transaction handling, error recovery, and production logging.</li>
+                <li>Resolved a PostgreSQL concurrency issue in task acceptance, preventing duplicate helper assignments.</li>
+                <li>Automated backend testing and deployments with pytest and GitHub Actions, reducing production release failures.</li>
               </ul>
               <div class="tag-row">
                 <span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">LLMs</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="experience-card reveal">
+            <img class="company-logo" src="assets/stealth.jpg" alt="Stealth logo" />
+            <div>
+              <div class="experience-top">
+                <div>
+                  <div class="role">Software Engineering Intern</div>
+                  <div class="company">Stealth Startup · San Francisco, CA · Remote</div>
+                </div>
+                <div class="time">April 2026 — May 2026</div>
+              </div>
+              <ul class="impact-list">
+                <li>Delivered a Next.js and GCP Firestore MVP in 4 weeks, supporting expert profiles, job creation, real-time updates, and lifecycle.</li>
+                <li>Built TypeScript MCP tools for AI-assisted expert matching and job dispatch, using Zod to validate Firestore state transitions.</li>
+                <li>utomated application builds and preview deployments through GitHub and Vercel, accelerating MVP testing and delivery.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Next.js</span><span class="tag">GCP Firestore</span><span class="tag">LLMs</span><span class="tag">MCP</span><span class="tag">React</span><span class="tag">TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+           <article class="experience-card reveal">
+            <img class="company-logo" src="assets/taskr.jpg" alt="Taskr logo" />
+            <div>
+              <div class="experience-top">
+                <div>
+                  <div class="role">Founding Engineer</div>
+                  <div class="company">Taskr, LLC · Blacksburg, VA · Remote</div>
+                </div>
+                <div class="time">February 2026 — April 2026</div>
+              </div>
+              <ul class="impact-list">
+                <li>Designed Taskr’s FastAPI and Supabase/PostgreSQL backend for onboarding, task creation, helper matching, notifications, and lifecycle workflows across iOS, Android, and web.</li>
+                <li>Built a rules-based ranking engine using 10+ signals, including proximity, availability, skill fit, ratings, response time, and history.</li>
+                <li>Improved concurrency and backend reliability using asynchronous PostgreSQL access with PgBouncer connection pooling.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">LLMs</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="experience-card reveal">
+            <img class="company-logo" src="assets/qdnet.jpeg" alt="QDnet Technologies logo" />
+            <div>
+              <div class="experience-top">
+                <div>
+                  <div class="role">Junior Software Programmer</div>
+                  <div class="company">QDnet Technologies · Mumbai, India</div>
+                </div>
+                <div class="time">January 2022 — December 2023</div>
+              </div>
+              <ul class="impact-list">
+                <li>Engineered a C++ telemetry ingestion service with non-blocking Linux sockets and a three-broker Apache Kafka cluster, processing 
+                    approximately 8 million GPS packets per day from 1,400+ vehicles while absorbing reconnection spikes.</li>
+                <li>Developed Spring Boot REST APIs for distance, route, weight, and deviation reports, using partitioned PostgreSQL storage and Redis
+                    caching to maintain responsive reporting for municipal administrators.</li>
+
+                <li>Developed and deployed a Node.js/Express telemetry-control service on Azure App Service for 6 industrial tanks that processed
+                    approximately 26,000 readings per day and issuing automated pump and valve commands.</li>
+                <li>Integrated Oracle connection pooling, Socket.io live updates, and Angular/TypeScript monitoring and reporting, reducing manual
+                    intervention by approximately 40% and utility costs by 30% within 3 months.</li>
+                
+                <li>Engineered a Go WebSocket service implementing OCPP 2.0.1 for 20+ EV charging stations, supporting persistent connections,
+                    transaction metering, status updates, and remote start/stop workflows.</li>
+                <li>Developed C# and ASP.NET Web APIs for Razorpay payments across 300+ users and 20+ stations, resolving delayed and duplicate
+                    transactions through webhook validation, idempotent processing, retries, and Oracle reconciliation.</li>
+                
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Spring Boot</span><span class="tag">C++</span><span class="tag">Kafka</span><span class="tag">Redis</span><span class="tag">Golang</span><span class="tag">OCPP 2.0</span><span class="tag">.NET</span><span class="tag">Oracle SQL</span><span class="tag">Azure</span><span class="tag">Terraform</span>
               </div>
             </div>
           </article>
@@ -1038,24 +1112,25 @@
             <div>
               <div class="experience-top">
                 <div>
-                  <div class="role">Software Developer</div>
+                  <div class="role">Trainee Software Programmer</div>
                   <div class="company">QDnet Technologies · Mumbai, India</div>
                 </div>
-                <div class="time">Jul 2021 — Dec 2023</div>
+                <div class="time">July 2021 — December 2021 </div>
               </div>
               <ul class="impact-list">
-                <li>Built fleet visibility for 1,400+ municipal vehicles with Spring Boot dashboards and a C++ TCP/IP engine processing 8M+ packets/day.</li>
-                <li>Architected Kafka telemetry streaming and Redis caching to reduce latency and remove retrieval bottlenecks.</li>
-                <li>Built Golang WebSocket/OCPP 2.0 EV charger communication supporting heartbeats, diagnostics, firmware updates, and remote commands.</li>
-                <li>Developed Razorpay payment workflows with C#/.NET, ASP.NET Web API, Oracle SQL, wallet flows, refunds, withdrawals, and reconciliation.</li>
-                <li>Built industrial water-tank automation and Django-based defense asset accountability workflows with audit-ready traceability.</li>
+                <li>Developed Django and MySQL workflows for RFID-based assignment and return of 100+ regulated assets, replacing paper records
+                    with centralized ownership and status tracking.</li>
+                <li>Implemented role-based authorization and append-only assignment histories, giving officers an auditable record of every asset’s custody
+                    and movement.</li>
+                <li>Prevented duplicate assignments from repeated RFID scans by adding backend request validation and software-debouncing logic within
+                    the air-gapped system.</li>
               </ul>
               <div class="tag-row">
-                <span class="tag">Spring Boot</span><span class="tag">C++</span><span class="tag">Kafka</span><span class="tag">Redis</span><span class="tag">Golang</span><span class="tag">OCPP 2.0</span><span class="tag">.NET</span><span class="tag">Oracle SQL</span><span class="tag">Azure</span><span class="tag">Terraform</span>
+                <span class="tag">Django</span><span class="tag">MySQL</span><span class="tag">Linux</span><span class="tag">Javascript</span>
               </div>
             </div>
           </article>
-
+          
           <article class="experience-card reveal">
             <img class="company-logo" src="assets/dbit.jpg" alt="Don Bosco Institute of Technology logo" />
             <div>
@@ -1067,13 +1142,15 @@
                 <div class="time">Feb 2020 — Nov 2020</div>
               </div>
               <ul class="impact-list">
-                <li>Deployed a PHP/JavaScript lab asset tracking application on AWS EC2 to track 300+ equipment items.</li>
-                <li>Used Amazon S3-backed storage for asset documents, images, and exported inventory records.</li>
-                <li>Implemented AWS Lambda automation for scheduled backups and inventory reports.</li>
-                <li>Maintained zero asset loss through traceability across status, location, and ownership records.</li>
+                <li>Developed a PHP, JavaScript, and MySQL inventory application for 200+ laboratory assets, enabling faculty to track availability,
+                    checkout history, repairs, location, and ownership.</li>
+                <li>Prevented conflicting equipment checkouts through MySQL transactions and row-level locking, maintaining accurate inventory during
+                    concurrent requests.</li>
+                <li>Contributed to deploying the PHP/Apache application on AWS EC2 with Amazon RDS, replacing manual logbooks with a centralized
+                    system used across university laboratories</li>
               </ul>
               <div class="tag-row">
-                <span class="tag">AWS EC2</span><span class="tag">Amazon S3</span><span class="tag">AWS Lambda</span><span class="tag">PHP</span><span class="tag">JavaScript</span>
+                <span class="tag">AWS EC2</span><span class="tag">Amazon RDS</span><span class="tag">PHP</span><span class="tag">JavaScript</span>
               </div>
             </div>
           </article>
@@ -1315,7 +1392,7 @@
 
           <div class="contact-actions">
             <a class="btn primary" href="mailto:utkarshlikhar.ms@gmail.com">utkarshlikhar.ms@gmail.com</a>
-            <a class="btn" href="https://drive.google.com/file/d/1lKWfvCiRpE7ikAgHdyw5MV_iyEQqpbaM/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
+            <a class="btn" href="https://drive.google.com/file/d/1Rgycf5PBBRo5WD_PnSlzkpRvnAFY10QP/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
             <a class="btn" href="https://github.com/utkarsh1109" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn" href="https://www.linkedin.com/in/utkarsh-likhar" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
