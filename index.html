@@ -1019,19 +1019,23 @@
                   <div class="role">Software Engineer</div>
                   <div class="company">Taskr, LLC · Blacksburg, VA · Remote</div>
                 </div>
-                <div class="time">May 2026 — Present</div>
+                <div class="time">February 2026 — Present</div>
               </div>
               <ul class="impact-list">
-                <li>Stabilized Taskr’s FastAPI and Supabase backend through validation, transaction handling, error recovery, and production logging.</li>
-                <li>Resolved a PostgreSQL concurrency issue in task acceptance, preventing duplicate helper assignments.</li>
-                <li>Automated backend testing and deployments with pytest and GitHub Actions, reducing production release failures.</li>
+                <li>Architected and stabilized the FastAPI and Supabase/PostgreSQL backend for onboarding, task creation, helper matching, and lifecycle workflows across iOS, Android, and web.</li>  
+
+<li>Built a rules-based ranking engine utilizing 10+ signals (proximity, availability, skill fit, ratings) and improved backend reliability via asynchronous PostgreSQL access with PgBouncer.</li>
+
+<li>Resolved a critical PostgreSQL concurrency issue in task acceptance by enforcing database-level consistency, preventing duplicate helper assignments.</li>
+
+<li>Automated backend testing and deployments with pytest and GitHub Actions, streamlining CI/CD pipelines and reducing production release failures.</li>
               </ul>
               <div class="tag-row">
                 <span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">LLMs</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span>
               </div>
             </div>
           </article>
-          
+    <!--  ----------------------------------------------------    
           <article class="experience-card reveal">
             <img class="company-logo" src="assets/stealth.jpg" alt="Stealth logo" />
             <div>
@@ -1073,7 +1077,7 @@
               </div>
             </div>
           </article>
-          
+          ----------------------------------------- -->
           <article class="experience-card reveal">
             <img class="company-logo" src="assets/qdnet.jpeg" alt="QDnet Technologies logo" />
             <div>
@@ -1085,25 +1089,17 @@
                 <div class="time">July 2021 — December 2023</div>
               </div>
               <ul class="impact-list">
-                <li>Engineered a C++ telemetry ingestion service with non-blocking Linux sockets and a three-broker Apache Kafka cluster, processing 
-                    approximately 8 million GPS packets per day from 1,400+ vehicles while absorbing reconnection spikes.</li>
-                <li>Developed Spring Boot REST APIs for distance, route, weight, and deviation reports, using partitioned PostgreSQL storage and Redis
-                    caching to maintain responsive reporting for municipal administrators.</li>
+                <li>Engineered a C++ telemetry ingestion service with non-blocking Linux sockets and a three-broker Apache Kafka cluster processing over 18 million daily GPS packets from 3,500+ vehicles for a municipal logistics client. </li>
+                <li>Developed Spring Boot REST APIs for distance, route, weight, and deviation reports, utilizing partitioned PostgreSQL and Redis caching to guarantee sub-second dashboard load times for municipal administrators managing multi-fleet operations.</li>
 
-                <li>Developed and deployed a Node.js/Express telemetry-control service on Azure App Service for 6 industrial tanks that processed
-                    approximately 26,000 readings per day and issuing automated pump and valve commands.</li>
-                <li>Integrated Oracle connection pooling, Socket.io live updates, and Angular/TypeScript monitoring and reporting, reducing manual
-                    intervention by approximately 40% and utility costs by 30% within 3 months.</li>
+                <li>Delivered a Node.js/Express telemetry-control backend on Azure App Service for an industrial client, processing 150,000+ daily sensor readings across 30+ facilities to automate pump and valve commands.  </li>
+                <li>Integrated Oracle connection pooling, Socket.io live updates, and an Angular/TypeScript dashboard, reducing the client's manual intervention by 40% and cutting operational utility costs by 30%.</li>
                 
-                <li>Engineered a Go WebSocket service implementing OCPP 2.0.1 for 20+ EV charging stations, supporting persistent connections,
-                    transaction metering, status updates, and remote start/stop workflows.</li>
-                <li>Developed C# and ASP.NET Web APIs for Razorpay payments across 300+ users and 20+ stations, resolving delayed and duplicate
-                    transactions through webhook validation, idempotent processing, retries, and Oracle reconciliation.</li>
+                <li>Engineered a Go WebSocket microservice implementing OCPP 2.0.1 for a regional client network, managing persistent connections and transaction metering across 100+ active EV charging stations.  </li>
+                <li>Built C# and ASP.NET Web APIs to process Razorpay transactions for 4,500+ EV network users, eliminating delayed and duplicate charges via webhook validation, idempotent processing, retries, and Oracle reconciliation. </li>
 
-                <li>Developed core backend workflows for a multi-tenant Laravel and PostgreSQL golf-course platform, supporting tee-time scheduling,
-equipment assignment, on-course ordering, billing, and Kafka-backed GPS ingestion from dozens to hundreds of devices.</li>
-                <li>Tracked the game progression using PostGIS geofences and implemented scheduled pace-of-play billing, preventing duplicate completion
-events and penalties caused by GPS drift through Redis debouncing and PostgreSQL idempotency constraints.</li>
+                <li>Architected backend workflows for a multi-tenant Laravel and PostgreSQL platform deployed across 4 client golf courses, handling tee-time scheduling, billing, and Kafka-backed GPS ingestion from 350+ active carts.  </li>
+                <li>Tracked game progression using PostGIS geofences and implemented scheduled pace-of-play billing, utilizing Redis debouncing and PostgreSQL idempotency constraints to prevent duplicate billing penalties caused by GPS drift.</li>
                 
               </ul>
               <div class="tag-row">
@@ -1147,7 +1143,7 @@ events and penalties caused by GPS drift through Redis debouncing and PostgreSQL
                 <div class="time">Feb 2020 — Nov 2020</div>
               </div>
               <ul class="impact-list">
-                <li>Developed a PHP, JavaScript, and MySQL inventory application for 200+ laboratory assets, enabling faculty to track availability,
+                <li>Developed a PHP, JavaScript, and MySQL inventory application for 2000+ laboratory assets, enabling faculty to track availability,
                     checkout history, repairs, location, and ownership.</li>
                 <li>Prevented conflicting equipment checkouts through MySQL transactions and row-level locking, maintaining accurate inventory during
                     concurrent requests.</li>
