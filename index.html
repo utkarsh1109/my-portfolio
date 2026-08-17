@@ -1022,13 +1022,13 @@
                 <div class="time">February 2026 — Present</div>
               </div>
               <ul class="impact-list">
-                <li>Architected and stabilized the FastAPI and Supabase/PostgreSQL backend for onboarding, task creation, helper matching, and lifecycle workflows across iOS, Android, and web.</li>  
-
-<li>Built a rules-based ranking engine utilizing 10+ signals (proximity, availability, skill fit, ratings) and improved backend reliability via asynchronous PostgreSQL access with PgBouncer.</li>
-
-<li>Resolved a critical PostgreSQL concurrency issue in task acceptance by enforcing database-level consistency, preventing duplicate helper assignments.</li>
-
-<li>Automated backend testing and deployments with pytest and GitHub Actions, streamlining CI/CD pipelines and reducing production release failures.</li>
+                <li> Architected and built the FastAPI + PostgreSQL (Supabase) backend of a two-sided marketplace application, owning the REST APIs,
+database schema, and business logic behind onboarding, task creation, payment integration and helper matching across iOS, Android,
+and web clients.</li>
+<li> Built a real-time helper-matching engine that ranked candidates by geodesic distance, live availability, and skills; dynamically tightening
+radius and priority for urgent requests; falling back to OpenAI semantic search via vector embeddings for open-ended requests.</li>
+<li> Integrated Stripe-based in-app payments into provider profiles, enabling secure end-to-end transactions within the platform, safeguarded
+by idempotency-key-guarded operations that block duplicate charges from network retries or race conditions.</li>
               </ul>
               <div class="tag-row">
                 <span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">LLMs</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span>
